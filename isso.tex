@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{Shivam}
+
+\tagline{3rd Year IT Undergraduate }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{2.5cm}{neerajpc}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{Kumar04shivamy@gmail.com}
+    \phone{+91-9210594831}
+  \location{Delhi, India}
+  \linkedin{linkedin.com/in/shivam-yeshu/}
+  
+    % \github{github.com/Shivamyeshu} 
+    
+   
+
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+
+\edu{B.Tech in Information Technology }{ Maharaja Agrasen Institute of Technology }{2023-- Present}{}
+
+
+\edu{ Diploma in ECE }{Pusa Institute of Technology}{2020-23}{Percentage -  78.6\%}
+
+
+
+\cvsection{PROJECTS}
+
+% \cveventnew{\textbf{PharmaTrack 360}}{}{}{2024} 
+% \begin{itemize}
+% \item Developed a blockchain-powered drug inventory management system using Ethereum, React, and Node.js. Implemented real-time monitoring and secure transaction handling to ensure timely and quality delivery of pharmaceuticals.
+% \end{itemize}
+
+
+% \cveventnew{\textbf{HealthLedger: Blockchain-Powered Medical Record Storer}}{}{Aug 2024}{} \begin{itemize} \item Developed a secure medical record storage platform using Solidity, Ethereum, and React. Implemented decentralized storage with IPFS and ensured data integrity with SHA-256 encryption. \end{itemize}
+ % ------------------------------------------------------------------------
+
+
+% project 1 
+\cveventnew{\textbf{Melo}}{}{Dec 2024}{} 
+\begin{itemize} 
+    \item Melo is a collaborative tool featuring Mesh language documentation with simple syntax, built on Next.js and Docker, offering a shared canvas and an integrated compiler for seamless development.  
+    \item It provides an intuitive user interface, streamlining the coding process and reducing setup time for developers.  
+\end{itemize}
+
+ % project 2
+ \cveventnew{\textbf{Mesh}}{}{Nov 2024}{} 
+ \begin{itemize}
+ \item Mesh an innovative programming language designed with a custom syntax.
+     Built on top of JavaScript.
+ \end{itemize}
+
+
+% projct 3
+\cveventnew{\textbf{Ease Explore: AI-Powered Trip Planning App}}{}{July 2024}{} \begin{itemize} \item Created a personalized trip planning app utilizing Next.js, TypeScript, and AI. 
+\item Features include AI-driven itinerary generation, cost estimation, and real-time travel updates. The app is branded as "EaseExplore" with the tagline "Simplify Your Adventure." \end{itemize}
+
+
+% project 4
+\cveventnew{\textbf{AyurX Assist }}{}{Feb 2024}{Delhi, India} \begin{itemize} \item Developed an AI chatbot capable of providing 24/7 support, using Botpress and modern web development technologies. The chatbot allows users to describe their symptoms and provides remedies in both Ayurvedic and modern medicine forms. \end{itemize}
+
+
+
+% project 5
+\cveventnew{\textbf{ Autonomous Obstacle Avoiding Car}}{ }{Feb 2023}{ Delhi, India }
+\begin{itemize}
+\item  Designed and implemented an autonomous car using ultrasonic sensors for real-time obstacle detection and dynamic path adjustment.
+
+\end{itemize}
+% \divider
+
+
+
+
+
+ \cvsection{ACHIEVEMENTs}
+\begin{itemize}
+
+\item\linespread{1.2}Secured a Top 10 rank among over 250 teams in the Inter-College round of SIH (Oct'24)
+
+\item\linespread{1.2}Secured a Top 250 rank among over 25k teams in Flipkart Grid 6.0 Robotics Challenge(Sept'24)
+
+\item\linespread{1.2} Completed 5 days Drone workshop conducted by CDAC,Noida (Aug’24)
+
+\item\linespread{1.2}  Runner Up in Chess competition ( HOURGLASS 4.0 ) at MAIT (Feb’24)
+
+%\item  Secured a Top 3 position in Debate competition, Conducted by IEEE GGSIPU (Dec'23)
+
+\item  Completed a Course of Introduction of Internet Of Thing by Telecom Sector Skill council ( Dec’23 )
+\end{itemize}
+
+\clearpage
+\end{document}
